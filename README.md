@@ -1,72 +1,64 @@
 # ⚽ FIFA Tweet Sentiment Analyzer
 
-This project is a simple Machine Learning web app that predicts the **sentiment of tweets related to the FIFA World Cup** (positive, neutral, or negative). Built using **Gradio**, **Scikit-learn**, and **NLTK**, this project was developed as part of an internship project on Sentiment Analysis.
+This project is a beginner-friendly **Machine Learning app** that predicts the **sentiment of tweets related to the FIFA World Cup** — using Natural Language Processing (NLP), TF-IDF, and Logistic Regression. The app is built using **Gradio** and deployed on **Hugging Face Spaces**.
 
-![Demo](https://huggingface.co/spaces/ansalcm/fifa-tweet-sentiment-analyzer/resolve/main/demo.gif) <!-- optional if you add a GIF or screenshot -->
+## 🚀 Live Demo
 
-## 🚀 Live App
-
-👉 [Try the Sentiment Analyzer on Hugging Face](https://huggingface.co/spaces/ansalcm/fifa-tweet-sentiment-analyzer)
+👉 [🌐 Try the App on Hugging Face](https://huggingface.co/spaces/ansalcm/fifa-tweet-sentiment-analyzer)
 
 ## 🧾 Project Notebook
 
-👉 [View full Google Colab notebook](https://colab.research.google.com/drive/1PygmPwNJTBMOMWylOPpUAR7VEbRFnIg3)
+📘 You can view the full Colab notebook, which includes:
+- Data exploration
+- Text preprocessing
+- Model training
+- Evaluation
+- Saving models for deployment
 
-The notebook includes data exploration, preprocessing, model training, evaluation, and saving steps.
+🔗 [Open in Google Colab](https://colab.research.google.com/drive/1PygmPwNJTBMOMWylOPpUAR7VEbRFnIg3?usp=sharing)
 
 ## 📦 Technologies Used
 
-- Python
+- Python 3
 - Scikit-learn
 - NLTK
 - Gradio
-- Jupyter/Colab (for model training)
-- Hugging Face Spaces (for deployment)
+- Google Colab
+- Hugging Face Spaces
+
+## 🧠 How It Works
+
+1. The user inputs a tweet related to the FIFA World Cup.
+2. The text is preprocessed (cleaned, tokenized, lemmatized).
+3. The text is transformed using a pre-trained TF-IDF vectorizer.
+4. The Logistic Regression model predicts the sentiment (positive, neutral, or negative).
+5. The result and model confidence are displayed in a Gradio UI.
 
 ## 📁 Project Structure
 
-├── app.py # Gradio web interface
+fifa-tweet-sentiment-analyzer/
+├── app.py # Main Gradio application
 ├── requirements.txt # Dependencies for Hugging Face
-├── logistic_regression.pkl # Trained sentiment classification model
-└── tfidf_vectorizer.pkl # TF-IDF vectorizer used during training
+├── logistic_regression.pkl # Trained sentiment classifier
+└── tfidf_vectorizer.pkl # TF-IDF transformer used for vectorization
 
-markdown
+bash
 Copy
 Edit
-
-## 🧠 Model Details
-
-- **Algorithm**: Logistic Regression
-- **Input**: Preprocessed tweet text
-- **Output**: Predicted sentiment (`positive`, `neutral`, or `negative`)
-- **Vectorizer**: TF-IDF
-
-## 🔄 How It Works
-
-1. Tweet text is cleaned and preprocessed (lowercased, stopwords removed, lemmatized).
-2. The text is vectorized using the TF-IDF model.
-3. The trained model predicts the sentiment.
-4. A confidence score is returned along with the prediction.
 
 ## 🛠 How to Run Locally
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/fifa-tweet-sentiment-analyzer.git
-   cd fifa-tweet-sentiment-analyzer
-Install dependencies:
+```bash
+# Clone the repository
+git clone https://github.com/your-username/fifa-tweet-sentiment-analyzer.git
+cd fifa-tweet-sentiment-analyzer
 
-bash
-Copy
-Edit
+# Install dependencies
 pip install -r requirements.txt
-Run the app:
 
-bash
-Copy
-Edit
+# Run the app
 python app.py
-📚 NLTK Downloads Used
+📚 NLTK Resources Required
 python
 Copy
 Edit
@@ -75,7 +67,5 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 👨‍💻 Author
 Ansal CM
-Internship Project on Sentiment Analysis
-Deployed using Hugging Face Spaces
-
-
+📝 Internship Project: Sentiment Analysis on FIFA Tweets
+🔗 View on Hugging Face
