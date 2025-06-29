@@ -8,6 +8,12 @@ This project is a simple Machine Learning web app that predicts the **sentiment 
 
 👉 [Try the Sentiment Analyzer on Hugging Face](https://huggingface.co/spaces/ansalcm/fifa-tweet-sentiment-analyzer)
 
+## 🧾 Project Notebook
+
+👉 [View full Google Colab notebook](https://colab.research.google.com/drive/1PygmPwNJTBMOMWylOPpUAR7VEbRFnIg3)
+
+The notebook includes data exploration, preprocessing, model training, evaluation, and saving steps.
+
 ## 📦 Technologies Used
 
 - Python
@@ -71,3 +77,5 @@ nltk.download('wordnet')
 Ansal CM
 Internship Project on Sentiment Analysis
 Deployed using Hugging Face Spaces
+
+
